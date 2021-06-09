@@ -8,19 +8,69 @@
     <link rel="stylesheet" href="style.css">
     <!--Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&family=Poiret+One&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31bc2b28fe.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--Header/Nav-->
     <div class="first-row grid">
         <h1 class="myName">Martin Lian Krane</h1>
         <a href="">About Me</a>
         <a href="">My Work</a>
     </div>
+    <!--Header/Nav Finish-->
+    <!--Content-->
+    <div class="myStudy">
+        <h2>Front-end Developer</h2>
+    </div>
     <div class="second-row grid">
-        <h2 class="myStudy">Front-end Developer</h2>
-        <img src="images/placeholder-portrait.svg" alt="" class="portrait">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat iure maxime adipisci voluptas magnam excepturi, nisi itaque tempore illo sed dignissimos beatae corrupti molestias corporis tempora odio reiciendis quos optio.</p>
+       <img src="/images/placeholder-portrait.svg" alt="">
+       <div class="short-about">
+            <p>Hey, My name is Martin Lian Krane. I'm currently a student at Noroff Vocational School in Bergen.
+               Here I am studying Front-End Development for 2 years.
+            </p>
+            <span><a href=""></a></span>
+        </div>
     </div>
 
+    
+    <div class="my-projects">
+        <h2>My Projects</h2>
+        <div class="projects grid">
+            <div class="project-one">
+               <a href=""><img src="/images/Skjermbilde (9).png" alt=""></a> 
+               <a href=""></a>
+            </div>
+            <div class="project-two">
+                <a href=""><img src="/images/Skjermbilde (8).png" alt=""></a> 
+            </div>
+            <div class="project-three">
+                <a href=""><img src="/images/Skjermbilde (10).png" alt=""></a> 
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <h4>Find me on</h4>
+        <div class="socials">
+            <span class="gitHover">Github</span>
+                <a href="" class="github" onmouseover="gitHubHover">
+                    <i class="fab fa-github"></i>
+                </a>
+            <span class="linkedHover">Linked In</span>
+                <a href="" class="linkedIn" onmouseover="linkedInHover">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+        </div>
+        <p>Martin Lian Krane &copy; copyright</p>
+    </footer>
+<script src="scripts.js"></script>
 </body>
 </html>
