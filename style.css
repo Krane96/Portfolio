@@ -46,12 +46,17 @@ p{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 40px;
+}
 .first-row{
     padding: 10px;
     width: 100%;
     display: grid;
     line-height: 60px;
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .first-row a{
@@ -90,7 +95,7 @@ p{
     margin-bottom: 7rem;
     text-align: center;
     margin-top: 10rem;
-    max-width: 1300px;
+    max-width: 1400px;
     
 }
 .myStudy h2{
@@ -99,7 +104,7 @@ p{
 }
 .second-row{
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1400px;
 }
 
 .second-row img{
@@ -182,7 +187,7 @@ p{
     padding: 10px 45px;
     border-radius: 2px;
     background-color:  #5d737e;
-    color: #fff;
+    color: #fffcf2;
     letter-spacing: 2px;
     font-size: 1em;
     text-transform: capitalize;
@@ -194,36 +199,42 @@ p{
 }
 
 .projects{
-    margin: 5rem auto;
+    margin: 3rem auto;
     text-align: center;
-    max-width: 1300px;
+    max-width: 1400px;
+}
+.projects p{
+    color: #fffcf2;
+    margin-bottom: 0;
+    margin-top: 30px;
 }
 
 .my-projects h2{
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-align: center;
     font-size: 1.8em;
     color: #fffcf2;
     text-transform: uppercase;
 }
-
+.project-one, .project-two, .project-three {
+    padding: 25px 35px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .project-one{
-    grid-column: 1/3;
+    grid-column: 1/4;
 }
 .project-two{
-    grid-column: 4/6;
-   
-   
+    grid-column: 4/7;
 }
 .project-three{
-    grid-column: 7/9;  
+    grid-column: 7/10;  
 }
 .projects img{
     width: 100%;
     vertical-align: middle;
     height: 70%;
     border-radius: 2px;
-    margin: 10px 0 25px 0;
+    margin: 18px 0 35px 0;
 }
 .projects img:hover{
     transition: 0.5s;
