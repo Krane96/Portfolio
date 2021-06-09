@@ -237,11 +237,10 @@ p{
     height: 70%;
     border-radius: 2px;
     margin: 18px 0 35px 0;
-    filter: grayscale(70%);
+
 }
 .projects img:hover{
     transition: 0.5s;
-    filter: none;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -273,6 +272,7 @@ p{
 }
 .latestPosts a{
     font-size: 1.3em;
+    font-weight: bold;
 }
 
 
