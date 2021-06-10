@@ -22,7 +22,7 @@ function sendAPItoHTML(post){
     post.forEach(function(blog){
         posts.innerHTML += `
         <div class="latestPosts">
-        <a href="#">${blog.title.rendered}</a>
+        <a href="#" class="centered">${blog.title.rendered}</a>
         <img>${blog.content.rendered}</img>
 
 
@@ -33,3 +33,25 @@ function sendAPItoHTML(post){
     })
 
 };
+
+
+//hover event
+
+function iconTextGit(){
+   const git = document.querySelector('.github-text')
+   git.style.visibility = "visible";
+   git.style.transition = "0.4s"
+}
+function iconTextGitNone(){
+    const git = document.querySelector('.github-text')
+    git.style.visibility = "hidden";
+}
+function iconTextLinked(){
+   const linked = document.querySelector('.linked-text')
+   linked.style.visibility = "visible";
+   linked.style.transition = "0.4s"
+}
+function iconTextNone(){
+    const linked = document.querySelector('.linked-text')
+    linked.style.visibility = "hidden";
+}

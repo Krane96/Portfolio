@@ -237,7 +237,6 @@ p{
     height: 70%;
     border-radius: 2px;
     margin: 18px 0 35px 0;
-
 }
 .projects img:hover{
     transition: 0.5s;
@@ -271,9 +270,29 @@ p{
     margin: 0 auto;
 }
 .latestPosts a{
-    font-size: 1.3em;
-    font-weight: bold;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px 45px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fffcf2;
+    letter-spacing: 2px;
+    font-size: 1em;
+    text-transform: capitalize;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+.latestPosts a:hover{
+    transition: 0.4s;
+    background-color: #3f4045;
+}
+.latestPosts{
+    position: relative;
+}
+
 
 
 
@@ -316,7 +335,7 @@ footer h4{
     font-size: 1.3em;
 }
 footer a{
-    margin: 13px;
+    margin: 15px 25px;
 }
 .socials{
     display: flex;
@@ -326,6 +345,7 @@ footer a{
     font-size: 2.4em;
     padding: 12px;
     width: 38px;
+    text-align: center;
 }
 .socials a{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -335,11 +355,29 @@ footer a{
 .github:hover{
     transition: 0.4s;
     background-color: #333333;
-    color: #fff;
+    color: #fffcf2;
 }
 .linkedIn:hover{
     transition: 0.4s;
     background-color: #4cc9f0;
-    color: #fff;
+    color: #fffcf2;
 }
-
+.icon-text{
+    display: flex;
+    justify-content: center;
+}
+.github-text{
+    background-color: #333333;
+    border-radius: 3px;
+    color: #fffcf2;
+    padding: 8px;
+    width: 100px;
+    visibility: hidden;
+}
+.linked-text{
+    background-color: #4cc9f0;
+    color: #fffcf2;
+    border-radius: 3px;
+    padding: 8px;
+    visibility: hidden;
+}
