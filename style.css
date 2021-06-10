@@ -216,7 +216,7 @@ p{
     margin-top: 30px;
 }
 
-.projectHeader, .blogHeader{
+.projectHeader, .blogHeader, .heading{
     letter-spacing: 4px;
     text-align: center;
     font-size: 1.8em;
