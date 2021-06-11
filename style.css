@@ -59,7 +59,6 @@ p{
 }
 
 .first-row{
-    padding: 10px;
     width: 100%;
     display: grid;
     line-height: 60px;
@@ -550,9 +549,7 @@ footer a{
         padding-bottom: 70px;
     }
 }
-@media screen and (max-width: 800px){
- 
-}
+
 
 @media screen and (max-width: 700px){
     .blogHeader, .projectHeader{
@@ -565,7 +562,19 @@ footer a{
          font-size: 1.8em;
      }
      .projects img{
-         height: 60%;
+         height: 50%;
+     }
+     .projects a{
+         padding: 8px 30px;
+     }
+     .projects h3{
+        font-size: 1.1em;
+     }
+     .projects p{
+         font-size: 1em;
+     }
+     .project-one, .project-two, .project-three{
+         padding-bottom: 10px;
      }
      
 }
@@ -595,7 +604,32 @@ footer a{
         text-align: center;
         margin: 0;
     }
-   
+    .projects :last-of-type{
+        grid-row: 2;
+        grid-column: 2/8;
+        
+    }
+    .projects :nth-last-of-type(2){
+        grid-column: 5/9;
+        grid-row: 3;
+        grid-column: 2/8;
+    }
+    .projects :first-of-type{
+        grid-column: 2/8;
+    }
+    .latest-blog-posts :last-of-type{
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column: 2/8;
+        
+    }
+    .latest-blog-posts :nth-last-of-type(2){
+        grid-column: 2/8;
+        grid-row: 2;
+    }
+    .latest-blog-posts :first-of-type{
+        grid-column: 2/8;
+    }
     
 }
 
@@ -605,5 +639,24 @@ footer a{
     }
     .short-about p{
         font-size: 1em;
+    }
+    .projects :last-of-type{
+        grid-column: 1/9;
+        
+    }
+    .projects :nth-last-of-type(2){
+        grid-column: 1/9;
+    }
+    .projects :first-of-type{
+        grid-column: 1/9;
+    }
+    .latest-blog-posts :last-of-type{
+        grid-column: 1/9;
+    }
+    .latest-blog-posts :nth-last-of-type(2){
+        grid-column: 1/9;
+    }
+    .latest-blog-posts :first-of-type{
+        grid-column: 1/9;
     }
 }
