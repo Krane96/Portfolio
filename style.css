@@ -155,7 +155,7 @@ p{
     align-items: center;
     justify-content: center;
     border: none;
-    background-color: #001d3d;
+    background-color: var(--buttons);
     box-sizing: border-box;
     border-radius: 3px;
     
@@ -302,7 +302,7 @@ p{
 
 /* About */
 .about-content{
-    margin: 10rem auto;
+    margin: 5rem auto;
     background-color: var(--buttons);
     height: 1000px;
     display: flex;
@@ -320,13 +320,14 @@ p{
     
 }
 .about span{
-    font-weight: 400;
+    font-weight: 600;
 }
 .about p{
     grid-column: 4/8;
     line-height: 40px;
     margin: 0;
     margin-left: 4rem;
+    font-size: 1.2em;
 }
 .about img{
     grid-column: 2/4;
@@ -397,7 +398,7 @@ footer p{
 footer h4{
     text-align: center;
     font-weight: normal;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 footer a{
     margin: 15px 25px;
@@ -430,6 +431,7 @@ footer a{
 .icon-text{
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 .github-text{
     background-color: #333333;
@@ -446,5 +448,8 @@ footer a{
     padding: 8px;
     visibility: hidden;
 }
-
+.finger{
+    text-align: center;
+    font-size: 1.6em;
+}
 
